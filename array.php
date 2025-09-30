@@ -1,5 +1,5 @@
 <?php           
-$jumlah = $_POST['jumlah'] ?? ;
+$jumlah = $_POST['jumlah'] ?? 0;
 if ($jumlah < 1) {
     die("Jumlah siswa tidak valid");
 }
@@ -9,6 +9,7 @@ if ($jumlah < 1) {
 <head>
 <meta charset="UTF-8">
 <title>Input Data Siswa</title>
+<link rel="stylesheet" href="array.css">
 </head>
 <body>
 <form action="arrayMap.php" method="post">

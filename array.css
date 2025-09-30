@@ -1,9 +1,9 @@
 /* style.css */
 
-/* Atur body agar tampilan bersih */
+/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #f8c291, #e17055);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,108 +12,114 @@ body {
     min-height: 100vh;
 }
 
-/* Bungkus utama */
+/* Container */
 .container {
-    background: #fff;
+    background: #fff8f0;
     padding: 25px 30px;
-    margin-top: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(100, 50, 0, 0.2);
     width: 500px;
+    border: 2px solid #fab1a0;
 }
 
 /* Judul */
-h2, h3, h4 {
+h2 {
     text-align: center;
-    color: #2c3e50;
-    margin-bottom: 15px;
+    color: #6d4c41;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 /* Label */
 label {
-    font-weight: bold;
     display: block;
-    margin: 10px 0 5px;
-    color: #34495e;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #6d4c41;
 }
 
-/* Input umum */
+/* Input */
 input[type="text"],
 input[type="number"] {
     width: 100%;
-    padding: 10px;
+    padding: 10px 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #e17055;
+    border-radius: 8px;
     font-size: 14px;
-    transition: 0.3s;
+    background: #fffdf9;
+    transition: all 0.3s ease;
 }
 
-/* Fokus input */
 input[type="text"]:focus,
 input[type="number"]:focus {
-    border-color: #3498db;
+    border-color: #d35400;
+    box-shadow: 0 0 8px rgba(211, 84, 0, 0.4);
     outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
 }
 
 /* Tombol */
 input[type="submit"],
-input[type="reset"],
-button {
-    padding: 10px 20px;
+input[type="reset"] {
+    padding: 10px 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
-    margin-right: 10px;
-    transition: 0.3s;
-}
-
-/* Tombol utama */
-input[type="submit"], button {
-    background-color: #3498db;
+    margin-right: 8px;
+    transition: 0.3s ease;
     color: white;
 }
 
-input[type="submit"]:hover,
-button:hover {
-    background-color: #2980b9;
+/* Tombol submit */
+input[type="submit"] {
+    background: #e17055;
+}
+
+input[type="submit"]:hover {
+    background: #d35400;
 }
 
 /* Tombol reset */
 input[type="reset"] {
-    background-color: #e74c3c;
-    color: white;
+    background: #b33939;
 }
 
 input[type="reset"]:hover {
-    background-color: #c0392b;
+    background: #873636;
 }
 
-/* Tabel hasil */
+/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
-    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-table th {
-    background-color: #3498db;
-    color: white;
+    padding: 12px;
     text-align: center;
 }
 
+table th {
+    background: #d35400;
+    color: white;
+    font-weight: 600;
+}
+
 table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background: #ffeaa7;
+}
+
+table tr:nth-child(odd) {
+    background: #fff5e6;
 }
 
 table tr:hover {
-    background-color: #f1f1f1;
+    background: #fab1a0;
 }
